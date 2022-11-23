@@ -1,0 +1,12 @@
+server:
+  port: 8090
+
+#APP SPECIFIC CUSTOM PROPERTIES
+kafka:
+  loggerTopic: t-des-message
+  bootstrap-servers: localhost:9092
+  securityProtocol: SSL
+  acks: all
+  group-id: java
+  autoOffsetResetConfig: earliest
+  autoOffsetResetForStreams: EARLIEST
